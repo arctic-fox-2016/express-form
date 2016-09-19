@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  div
+   form(action='/',method='post')
+     label(for='txt-string') Test string
+     input(id='txt-string',type='text',value='',name='test_string')
+     input(type='submit',value='Submit')
+  if text
+    p Result: #{text}
+  else
+    p Result: -
