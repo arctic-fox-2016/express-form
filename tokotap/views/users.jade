@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  p #{say} #{what} #{text}
+  form(action='/users', method='POST')
+    input(name='text')
+    input(type='submit')
+
+block footer
+  h6
+    i copyright 2016 www.tokotap.com
