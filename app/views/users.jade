@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to Users page
+  form(action="/users",name="registration", method='Get')
+    label Name :
+    input(type='text', name='say')
+    br
+    input(type='submit' value='Send')
