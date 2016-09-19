@@ -1,0 +1,17 @@
+doctype html
+html(lang='en')
+  head
+    title Jade
+  body
+    form(action='http://localhost:3000/users/add', method='POST')
+      p
+        | First Name
+        input(type='text', name='firstname')
+        input(type='text', name='lastname')
+      button(type='submit') submit
+    p
+      nama lengkap : #{firstname} #{lastname}
+
+    p
+      ini request!#{req}
+      ini Response#{res}
